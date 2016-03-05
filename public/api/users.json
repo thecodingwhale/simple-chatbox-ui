@@ -1,0 +1,42 @@
+{
+    "users" : [{
+            "username" : "Demetrix GOW",
+            "status" : "Offline",
+            "profileimage" : "/images/users/animals.jpg"
+        },{
+            "username" : "Diego Moliterno",
+            "status" : "Online"
+        },{
+            "username" : "Emily Ng",
+            "status" : "Offline",
+            "profileimage" : "/images/users/animals.jpg"
+        },{
+            "username" : "Andrias Taiwan",
+            "status" : "Offline"
+        },{
+            "username" : "Che Ness",
+            "status" : "Online"
+        },{
+            "username" : "Joe Lonie",
+            "status" : "Online"
+        },{
+            "username" : "Tim Stewart",
+            "status" : "Offline"
+        },{
+            "username" : "Ben Sciascia",
+            "status" : "Offline",
+            "profileimage" : "/images/users/animals.jpg"
+        },{
+            "username" : "Karl Steven",
+            "status" : "Online",
+            "profileimage" : "/images/users/animals.jpg"
+        },{
+            "username" : "Ian Jones",
+            "status" : "Online",
+            "profileimage" : "/images/users/animals.jpg"
+        },{
+            "username" : "Nick Atkinson",
+            "status" : "Offline"
+        }
+    ]
+}

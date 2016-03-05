@@ -1,0 +1,127 @@
+@max-width: 238px;
+@max-height: 300px;
+
+.chat-box {
+    display: block;
+    max-width: @max-width;
+}
+.chat-box__header {
+    padding: 12px 15px;
+    background-color: @primary;
+    color: @white;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.chat-box__loader {
+    color: @primary;
+}
+.chat-box__users {
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+    height: @max-height;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+.chat-box__user {
+    padding: 6px;
+    border-bottom: 1px solid @border-color;
+    overflow: hidden;
+    &:nth-child(even) {
+        background-color: @light-gray;
+    }
+    &:hover {
+        background-color: #F5F5F5;
+        cursor: pointer;
+    }
+}
+.chat-box__user_avatar {
+    float: left;
+    width: 34px;
+    height: 34px;
+    background-color: #333742;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 8px;
+    img {
+        width: 34px;
+        hieght: 34px;
+    }
+}
+.chat-box__user_details {
+    line-height: 34px;
+    overflow: hidden;
+    position: relative;
+}
+.chat-box__user_name {
+    line-height: 34px;
+    font-weight: bold;
+    float: left;
+    color: @primary;
+}
+.chat-box__user_status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    background: @status-offline-color;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -5px;
+}
+.chat-box__user_status--online {
+    background: @status-online-color;
+}
+.chat-box__form {
+}
+.chat-box__form__group {
+    position: relative;
+    color: #A9A9A9;
+    &:hover {
+        color: #333742;
+    }
+}
+.chat-box__form__icon {
+    position: absolute;
+    pointer-events: none;
+    top: 14px;
+    padding-left: 16px;
+}
+.chat-box__form__search {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d7d7d6;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding-left: 40px;
+    &:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+}
+
+.chat-box--default {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 20px;
+}
+
+.chat-box--close {
+    .chat-box__users,
+    .chat-box__form {
+        display: none;
+    }
+}

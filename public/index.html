@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBox - Frontend Examination</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <div class="chat-box chat-box--default chat-box--close" role="chat-box">
+        <div class="chat-box__header" role="chat-box-header">
+            My Contacts <i class="fa fa-circle-o-notch fa-spin" role="chat-box-loader"></i>
+        </div>
+        <div class="chat-box__users" role="chat-box-users">
+        </div>
+        <form class="chat-box__form">
+            <div class="chat-box__form__group">
+                <i class="fa fa-search chat-box__form__icon"></i>
+                <input class="chat-box__form__search override" type="text" placeholder="Search">
+            </div>
+        </form>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
