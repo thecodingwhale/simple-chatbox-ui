@@ -1,5 +1,4 @@
 #Simple ChatBox UI
-==========================================
 
 install the updated NodeJS and install gulp and gulp-cli globally
 
@@ -7,7 +6,13 @@ install the updated NodeJS and install gulp and gulp-cli globally
 
 open the terminal and go to the directory root of the project and do a npm install
 
-after the installation is complete open the [localhost:9000](localhost:9000) in google chrome (just tested in google chrome)
+after the installation is complete open [localhost:9000](localhost:9000) in google chrome (only tested in this browser)
 
 ### For Development
-run `gulp watch` and open the go to [localhost:3000](localhost:3000) for development environment
+
+`npm start` to run first our required server [localhost:9000](localhost:9000)
+
+run `gulp watch` and open the go to [localhost:3000](localhost:3000) proxy for development environment
+
+### For Production
+run `gulp --production` for compiling the assets file and open [localhost:9000](localhost:9000)
